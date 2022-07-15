@@ -1,8 +1,5 @@
 """
 Code to Calculate Water Influx (Schilthuis, VEH, Fetkovich, and Material Balance Method)
-
-@author: Yohanes Nuwara
-@email: ign.nuwara97@gmail.com
 """
 
 class schilthuis():

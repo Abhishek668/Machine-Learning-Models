@@ -28,7 +28,6 @@ def display_cm(cm, labels, hide_zeros=False,
     for label in labels: 
         print ("%{0}s".format(columnwidth) % label)
     print ("%{0}s".format(columnwidth) % 'Total')
-    print
     print ("    " + " True")
     # Print rows
     for i, label1 in enumerate(labels):

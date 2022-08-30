@@ -37,12 +37,9 @@ def display_cm(cm, labels, hide_zeros=False,
             if hide_zeros:
                 cell = cell if float(cm[i, j]) != 0 else empty_cell
             print (cell)
-        print ("%{0}d".format(columnwidth) % sum(cm[i,:])
-        
-        
-        
+        print ("%{0}d".format(columnwidth) % sum(cm[i,:]))
+       
     if display_metrics:
-        print
         print ("Precision")
         for j in range(len(labels)):
             cell = "%{0}.2f".format(columnwidth) % precision[j]

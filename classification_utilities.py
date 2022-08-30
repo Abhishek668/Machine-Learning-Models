@@ -40,7 +40,7 @@ def display_cm(cm, labels, hide_zeros=False,
             print (cell)
         print ("%{0}d".format(columnwidth) % sum(cm[i,:])
         
-        print
+        
         
     if display_metrics:
         print
@@ -49,19 +49,19 @@ def display_cm(cm, labels, hide_zeros=False,
             cell = "%{0}.2f".format(columnwidth) % precision[j]
             print (cell)
         print ("%{0}.2f".format(columnwidth) % total_precision)
-        print
+        
         print ("   Recall")
         for j in range(len(labels)):
             cell = "%{0}.2f".format(columnwidth) % recall[j]
             print (cell)
         print( "%{0}.2f".format(columnwidth) % total_recall)
-        print
+        
         print ("       F1")
         for j in range(len(labels)):
             cell = "%{0}.2f".format(columnwidth) % F1[j]
             print (cell)
         print ("%{0}.2f".format(columnwidth) % total_F1)
-        print
+        
     
                   
 def display_adj_cm(

@@ -31,7 +31,7 @@ def display_cm(cm, labels, hide_zeros=False,
     print ("    " + " True")
     # Print rows
     for i, label1 in enumerate(labels):
-        print ("    %{0}s".format(columnwidth) % label1)
+        print ("%{0}s".format(columnwidth) % label1)
         for j in range(len(labels)): 
             cell = "%{0}d".format(columnwidth) % cm[i, j]
             if hide_zeros:
@@ -46,13 +46,13 @@ def display_cm(cm, labels, hide_zeros=False,
             print (cell)
         print ("%{0}.2f".format(columnwidth) % total_precision)
         
-        print ("   Recall")
+        print ("Recall")
         for j in range(len(labels)):
             cell = "%{0}.2f".format(columnwidth) % recall[j]
             print (cell)
-        print( "%{0}.2f".format(columnwidth) % total_recall)
+        print("%{0}.2f".format(columnwidth) % total_recall)
         
-        print ("       F1")
+        print ("F1")
         for j in range(len(labels)):
             cell = "%{0}.2f".format(columnwidth) % F1[j]
             print (cell)
